@@ -6,7 +6,7 @@ Etor is in Java, and Python. You can find the source code under "src" directory 
 
 1. After cloning/extracting the tool directory in a folder (e.g., ~/Etor/tool), you need to change the ***JAVA_HOME*** parameter in **etor.sh** script file. ***JAVA_HOME*** is the path of your Java folder.
 2. Run the script for the app using the following command.
-> **./etor.sh**
+>**./Etor.sh <token> <typesOfIssueToCheck> <repo1> <repo2> <GitHubIssueOrPRlink>**
    
 # Evaulation
 Etor detects following 7 types of issues.
