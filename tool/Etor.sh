@@ -1,0 +1,3 @@
+HEAP="-Xms2048m -Xmx2048m" 
+export JAVA_OPTS="$HEAP"
+java -jar ESDroid.jar $1 $2 $PLATFORDIRFORSLICER $SOURCESINK $3
