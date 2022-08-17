@@ -6,15 +6,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.Instant;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -22,69 +17,26 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Optional;
-import java.util.Properties;
-import java.util.Scanner;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
 
-import org.kohsuke.github.GHBlob;
-import org.kohsuke.github.GHBranch;
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
+
 import org.kohsuke.github.GHCommit;
-import org.kohsuke.github.GHCommitQueryBuilder;
-import org.kohsuke.github.GHCommitSearchBuilder;
 import org.kohsuke.github.GHContent;
-import org.kohsuke.github.GHContentSearchBuilder;
-import org.kohsuke.github.GHDirection;
-import org.kohsuke.github.GHEvent;
-import org.kohsuke.github.GHEventPayload;
-import org.kohsuke.github.GHException;
 import org.kohsuke.github.GHIssue;
 import org.kohsuke.github.GHIssueComment;
 import org.kohsuke.github.GHIssueEvent;
-import org.kohsuke.github.GHIssueSearchBuilder;
-import org.kohsuke.github.GHIssueState;
-import org.kohsuke.github.GHLabel;
-import org.kohsuke.github.GHPersonSet;
 import org.kohsuke.github.GHPullRequest;
-import org.kohsuke.github.GHPullRequestCommitDetail;
 import org.kohsuke.github.GHPullRequestFileDetail;
-import org.kohsuke.github.GHPullRequestQueryBuilder;
-import org.kohsuke.github.GHRelease;
 import org.kohsuke.github.GHRepository;
-import org.kohsuke.github.GHRepositoryDiscussion;
-import org.kohsuke.github.GHUser;
-import org.kohsuke.github.GHUserSearchBuilder;
-import org.kohsuke.github.GHWorkflow;
-import org.kohsuke.github.GHWorkflowRun;
 import org.kohsuke.github.GitHub;
-import org.kohsuke.github.GitHubBuilder;
 import org.kohsuke.github.PagedIterable;
-import org.kohsuke.github.PagedSearchIterable;
-import org.kohsuke.github.PayloadRule;
-import org.kohsuke.github.RateLimitTarget;
 import org.kohsuke.github.GHCommit.File;
 import org.kohsuke.github.GHRepository.Contributor;
-import org.kohsuke.github.GHRepositorySearchBuilder;
-import org.kohsuke.github.GHTeam;
-import org.kohsuke.github.GHWorkflowRun.Status;
-import org.kohsuke.github.function.InputStreamFunction;
-import org.python.apache.commons.compress.archivers.zip.ZipArchiveEntry.CommentSource;
-import org.python.core.PyObject;
-import org.python.core.PyString;
-import org.python.util.PythonInterpreter;
 
-import com.google.common.io.Files;
-
-import org.kohsuke.github.GHTreeEntry;
-import java.util.Collection;
-import org.apache.commons.io.FileUtils;
-import it.zielke.moji.SocketClient;
 import wiremock.org.apache.commons.io.FilenameUtils;
 
 public class Etor {
@@ -93,13 +45,7 @@ public class Etor {
 	
 	static HashMap<String,String> specialLicenseList;
 	static ArrayList<String> filesExtensionToCompare;
-	static String token="";
-	
-	/*setup and required library
-	 * 1) ac-2.1.5-SNAPSHOT-783f2.jar (https://github.com/manuel-freire/ac2) - AC2
-	 *   - update Analysis.java accordingly
-	 * */
-	//static boolean specialLicense=false;
+	static String token="";	
 	
 	/*function name: setUp
 	 *this method is to connect the github without repo name*/
@@ -157,6 +103,7 @@ public class Etor {
 	 */
 	
 	public static void UnmaintainedAndroidWithPaidService(String repo) throws IOException {
+		System.out.println("UnmaintainedAndroidWithPaidService");
 		GHRepository repository = setUp(repo);
 		if(repository.isFork()) {
 			System.out.println("!original : " + repo );
@@ -188,16 +135,16 @@ public class Etor {
         		}
         	}
         
-        String d = repository.getLatestRelease()!=null?repository.getLatestRelease().getPublished_at().toString():null;
+        Date d = repository.getLatestRelease()!=null?repository.getLatestRelease().getPublished_at():null;
         
-        LocalDate d1 = LocalDate.now().minusDays(300);
-        LocalDate d2 = LocalDate.parse(d);
-        if(d2.isBefore(d1)) {
+        Date date = new Date(System.currentTimeMillis());
+        if(d.before(date)) {
         	oneYearAgo=true;
         }        
         
         System.out.println(" PlayStore: "+playStore+", paidTrue: "+paidTrue + ", Repo: "+repo+ ", "+str+", "+d  +" , oneYearAgo="+oneYearAgo);
         }catch(Exception e) {
+        	e.printStackTrace();
             	//System.out.println("error while reading web page : "+repository.getHtmlUrl());
          }finally {reader.close();}
 	}
@@ -286,7 +233,7 @@ public class Etor {
 	 * 3) if not same, check whether code commited includes the stackoverflow link or not 
 	 * */
 	
-	public static void noAttributionCheckInCode(String repo, int n, boolean issueType) throws IOException {
+	public static void noAttributionCheckInCode(String repo,boolean issueType, int n) throws IOException {
 		boolean found=false;
 		boolean credit=false;
 		String slink="";
@@ -331,14 +278,14 @@ public class Etor {
 				try{
 					slink = concatLinkTmpHyphen(pr.getBody(),"stackoverflow.com");
 					if(slink.trim().length()>0) {
-						slinkF = true;userID=i.getUser().getLogin();
+						slinkF = true;userID=pr.getUser().getLogin();
 					}
 				}catch(Exception e) {}				
 				
 				if(!slinkF) {try{
 					slink = concatLinkTmpHyphen(pr.getTitle(),"stackoverflow.com");
 					if(slink.trim().length()>0) {
-						slinkF = true;userID=i.getUser().getLogin();
+						slinkF = true;userID=pr.getUser().getLogin();
 					}
 				}catch(Exception e) {}}
 				
@@ -348,7 +295,7 @@ public class Etor {
 						 if(c.getBody()!=null) {
 							 slink = concatLinkTmpHyphen(c.getBody(),"stackoverflow.com");
 							 if(slink.trim().length()>0) {
-								 slinkF = true;userID=i.getUser().getLogin();
+								 slinkF = true;userID=pr.getUser().getLogin();
 							 }
 						 	}
 					 	 }
@@ -409,7 +356,7 @@ public class Etor {
 	
 	public static boolean codeSimilarityUsingAC2() throws IOException {
 		// Run a java app in a separate system process
-		Process proc = Runtime.getRuntime().exec("java -jar C:\\Users\\Etor\\eclipse-workspace\\Etor\\lib\\ac-2.1.5-SNAPSHOT-UpdatedForEtor.jar");
+		Process proc = Runtime.getRuntime().exec("java -jar lib/ac-2.1.5-SNAPSHOT-UpdatedForEtor.jar");
 		// Then retreive the process output
 		InputStream in = proc.getInputStream();
 		InputStream err = proc.getErrorStream();
@@ -520,11 +467,11 @@ public class Etor {
 			GHRepository mainrepo = setUp(PRRepo);
 			//download two repo
 			GitHubRepoDownload gd = new GitHubRepoDownload();
-			gd.downloadRepoContent(mainrepo.getGitTransportUrl(), "C:\\Users\\Etor\\Downloads\\test\\"+mainrepo.getName()+"\\");
+			gd.downloadRepoContent(mainrepo.getGitTransportUrl(), "test/"+mainrepo.getName()+"/");
 			
 			GHRepository cloneRepo = setUp(checkRepo);
 			
-			gd.downloadRepoContent(cloneRepo.getGitTransportUrl(), "C:\\Users\\Etor\\Downloads\\test\\"+cloneRepo.getName()+"\\");
+			gd.downloadRepoContent(cloneRepo.getGitTransportUrl(), "test/"+cloneRepo.getName()+"/");
 			
 			//copy all source files into one folder for AC2
 			//set up file extension to copy
@@ -532,11 +479,11 @@ public class Etor {
 			if(filesExtensionToCompare==null) return;
 			
 			//for(String s: filesExtensionToCompare) {
-				gd.copyFile("C:\\Users\\Etor\\Downloads\\test\\"+mainrepo.getName()+"\\", 
-						"C:\\Users\\Etor\\Downloads\\test\\ac2\\", mainrepo.getName(),filesExtensionToCompare);
+				gd.copyFile("/test/"+mainrepo.getName()+"/", 
+						"/test/ac2/", mainrepo.getName(),filesExtensionToCompare);
 				
-				gd.copyFile("C:\\Users\\Etor\\Downloads\\test\\"+cloneRepo.getName()+"\\", 
-						"C:\\Users\\Etor\\Downloads\\test\\ac2\\", cloneRepo.getName(),filesExtensionToCompare);
+				gd.copyFile("/test/"+cloneRepo.getName()+"/", 
+						"/test/ac2/", cloneRepo.getName(),filesExtensionToCompare);
 			//}
 			
 			//call codeSimilarityUsingAC2
@@ -923,7 +870,7 @@ private static void runScript(){
   System.out.println("runScript");
 	    try{
 	         // process = Runtime.getRuntime().exec(new String[]{file,"arg1","arg2"});
-	          process = Runtime.getRuntime().exec("C:\\Users\\Etor\\eclipse-workspace\\Etor\\PyGithub.bat");
+	          process = Runtime.getRuntime().exec("tool/PyGithub.bat");
 	    }catch(Exception e) {
 	       System.out.println("Exception Raised" + e.toString());
 	    }
@@ -958,7 +905,7 @@ private static void runScript(){
 public static void retrieveLicenseChange(String tmpRepo) {
 
 	  try {
-	  FileWriter myWriter = new FileWriter("C:\\Users\\Etor\\eclipse-workspace\\Etor\\Repo.txt");
+	  FileWriter myWriter = new FileWriter("Repo.txt");
 			try {
 					GHRepository repo=setUp(tmpRepo);
 					String toWrite="";
@@ -1015,7 +962,7 @@ public static void commitChangeLicenseChecking() {
 	  BufferedReader objReader = null;
 	  try {
 	   String strCurrentLine="";
-	   objReader = new BufferedReader(new FileReader("C:\\Users\\\\Etor\\eclipse-workspace\\Etor\\CommitListTest.txt"));
+	   objReader = new BufferedReader(new FileReader("CommitListTest.txt"));
 	   while ((strCurrentLine = objReader.readLine()) != null) {
 		   try {
 			   lchange=false;
@@ -1089,7 +1036,8 @@ public static void commitChangeLicenseChecking() {
  * this method is one of the methods to find uninformed license change / check whether license file is changed. if change, did they have PR? if no PR/ no issues, meaning "no awareness"
  * 
  * Here is the step :
- * Note; so far, run the functions one by one
+ * Note; so far, run the functions one by one (i.e., retrieveLicenseChange(tmpRepo); runScript(); commitChangeLicenseChecking(); unInformedLicenseChangeMain(String tmpRepo);)
+ * Do not forget to change path in .bat and .py
  *  
  * Run "unInformedLicenseChangeMain" function
  * 1) retrieve license file name
@@ -1121,7 +1069,7 @@ public static void unInformedLicenseChangeMain(String tmpRepo) throws Exception 
 	  BufferedReader objReader = null;
 	  try {
 	   String strCurrentLine;
-	   objReader = new BufferedReader(new FileReader("C:\\Users\\Etor\\eclipse-workspace\\Etor\\CommitListTest.txt"));
+	   objReader = new BufferedReader(new FileReader("CommitListTest.txt"));
 	   while ((strCurrentLine = objReader.readLine()) != null) {
 		   strCurrentLine = strCurrentLine.trim();
 		   try {
@@ -1333,7 +1281,7 @@ public static HashMap<String,String> setupLicenseList() {
 	  try {
 	   String strCurrentLine="";
 	   licenseList = new HashMap<String,String>();
-	   objReader = new BufferedReader(new FileReader("C:\\Users\\Etor\\eclipse-workspace\\github-api-main\\src\\main\\java\\LicenseList.txt"));
+	   objReader = new BufferedReader(new FileReader("tool/LicenseList.txt"));
 
 	   while ((strCurrentLine = objReader.readLine()) != null) {
 		   licenseList.put(strCurrentLine.split(",")[1],strCurrentLine.split(",")[0]);
@@ -1485,11 +1433,55 @@ return"";
 	
 }
 
-	public static void main(String[] args) throws IOException {
+public static void main(String[] args){
 		try {
+			Instant start = Instant.now();
+			if(args==null || args.length<5)
+				System.exit(0);			
+			token = args[0];
+			int type = Integer.parseInt(args[1]);
+			String repo1 = args[2].equals("null")?"":args[2].split("/")[3].trim()+"/"+args[2].split("/")[4];
+			String repo2 = args[3].equals("null")?"":args[3].split("/")[3].trim()+"/"+args[3].split("/")[4];
+			String i = args[4].equals("null")?"":args[4].split("/")[(args[4].split("/").length)-1];
+			String iT = args[4].equals("null")?"":args[4].split("/")[(args[4].split("/").length)-2];
 			
+			
+			switch(type) {
+			//1.Unmaintained
+			case 1: UnmaintainedAndroidWithPaidService(repo1);
+			break;
+					
+			//2.NoLicense
+			case 2: noLicenseRepo(repo1);
+			break;
+			
+			//3.LicIn
+			case 3: licenseInconsistency(repo1);
+			break;
+			
+			//4.Uninfored
+			case 4: unInformedLicenseChangeMain(repo1);//commitChangeLicenseChecking();//runScript();//retrieveLicenseChange(repo1);//
+			break;
+			
+			//5.NoAtt
+			case 5: noAttributionCheckInCode(repo1,iT.startsWith("i"),Integer.parseInt(i));
+			break;
+			
+			//6.Soft-Forking
+			case 6: softForkingMain(repo1,repo2);
+			break;
+			
+			//7.SelfPro
+			case 7: getSelfPromotionFinalByRetrieveAllLinksInPage(args[4], iT.startsWith("i"), repo1, Integer.parseInt(i));
+			break;
+			}
+			
+			Instant end=Instant.now();
+			Duration timeE = Duration.between(start,end);
+			System.out.println("Time taken = "+ timeE);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
+			System.out.println("Here");
 			e.printStackTrace();
 		}
 	}
