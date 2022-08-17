@@ -23,7 +23,7 @@ Etor is in Java, and Python. You can find the source code under "src" directory 
   >[E.g.,  ./Etor.sh ghp_xxxx 4 https://github.com/EtorChecker/Etor null null]
   
   For "No-Attribution-To-the-Author-in-Code",
-  >[E.g.,  ./Etor.sh ghp_xxx 5 null null https://github.com/EtorChecker/Etor/issues/2]
+  >[E.g.,  ./Etor.sh ghp_xxx 5 https://github.com/EtorChecker/Etor null https://github.com/EtorChecker/Etor/issues/2]
   
    For "Soft-Forking",
   >[E.g.,  ./Etor.sh ghp_xxx 6 https://github.com/EtorChecker/Etor https://github.com/EtorChecker/EtorCopy null]
