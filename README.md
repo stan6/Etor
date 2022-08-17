@@ -42,3 +42,5 @@ The replication package is structured as follows:
     |--- tool/                   The scripts
     |--- LicenseList.txt         The list of license
 ```
+
+[This is an external link to download Etor.jar](https://www.dropbox.com/s/ul5b6k8sdqxlpcd/Etor.jar?dl=0)
