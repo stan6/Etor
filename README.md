@@ -7,7 +7,7 @@ Etor is in Java, and Python. You can find the source code under "src" directory 
 1. After cloning/extracting the tool directory in a folder (e.g., ~/Etor/tool), you need to change the ***PROJECTLOCATION***, and ***PYTHONLOCATION*** parameters in **etor.sh** script file. ***PROJECTLOCATION*** is the path of your folder where the tool (Etor) located, and ***PYTHONLOCATION*** is the path of your PYTHON folder.
 
 2. Run the script for the app using the following command. Etor can detect 7 unethical behavior issues types.
->./Etor.sh <github_token_to_authenticate> <type_of_unethical_issue> <repo1> <repo2> <GitHub_Issue_PR_link>
+>./Etor.sh <github_token_to_authenticate> <type_of_unethical_issue> <repoistory_1> <repository_2> <GitHub_Issue_PR_link>
 
   For "Unmaintained-Android-Project-with-PaidService",
   >[E.g.,  ./Etor.sh ghp_xxx 1 https://github.com/EtorChecker/Etor null null]
