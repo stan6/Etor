@@ -27,4 +27,5 @@ The replication package is structured as follows:
     |--- lib/                    List of dependencies.   
     |--- src/                    Implementation including libraries and source code
     |--- tool/                   The scripts
+    |--- license/                The list of license
 ```
