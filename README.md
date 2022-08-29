@@ -37,6 +37,7 @@ The replication package is structured as follows:
 ```
     /
     .
+    |--- data/                    List of study, and evaluation data. 
     |--- lib/                    List of dependencies.   
     |--- src/                    Implementation including libraries and source code
     |--- tool/                   The scripts
