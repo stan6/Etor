@@ -1,6 +1,5 @@
 |S/N|Type|Link|
 |:-----:|:-------:|:-------:|
-|1|https://github.com/nuxt/framework/issues/4251||
 |	1	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/keredson/peewee/issues/2	|
 |	2	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/SheetJS/sheetjs/issues/2095	|
 |	3	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/py2neo-org/py2neo/pull/864	|
