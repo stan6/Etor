@@ -1,17 +1,17 @@
 |S/N|Type|Link|Artifact|
 |:-----:|:-------:|:-------:|:-------:|
-1	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/keredson/peewee/issues/2	|	PR/Issue reviews	|
-2	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/SheetJS/sheetjs/issues/2095	|	PR/Issue reviews	|
+1	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/keredson/peewee/issues/2	|	PR/Issue comments	|
+2	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/SheetJS/sheetjs/issues/2095	|	PR/Issue comments	|
 3	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/py2neo-org/py2neo/pull/864	|	PR/Issue reviews	|
-4	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/tensorflow/datasets/issues/1437	|	PR/Issue reviews	|
-5	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/aseprite/aseprite/issues/2679	|	PR/Issue reviews	|
-6	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/react-component/select/issues/41	|	PR/Issue reviews	|
-7	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/monero-project/monero/issues/5942	|	PR/Issue reviews	|
-8	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/code-terminator/invariant_rationalization/issues/2	|	PR/Issue reviews	|
-9	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/nagdevAmruthnath/Predictive-Maintenance/issues/3	|	PR/Issue reviews	|
+4	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/tensorflow/datasets/issues/1437	|	PR/Issue comments	|
+5	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/aseprite/aseprite/issues/2679	|	PR/Issue comments	|
+6	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/react-component/select/issues/41	|	PR/Issue comments	|
+7	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/monero-project/monero/issues/5942	|	PR/Issue comments	|
+8	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/code-terminator/invariant_rationalization/issues/2	|	PR/Issue comments	|
+9	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/nagdevAmruthnath/Predictive-Maintenance/issues/3	|	PR/Issue comments	|
 10	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/AdguardTeam/AdguardFilters/pull/78044	|	PR/Issue reviews	|
-11	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/AbsInt/CompCert/issues/390	|	PR/Issue reviews	|
-12	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/jridgewell/Unlock/issues/9	|	PR/Issue reviews	|
+11	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/AbsInt/CompCert/issues/390	|	PR/Issue comments	|
+12	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/jridgewell/Unlock/issues/9	|	PR/Issue comments	|
 13	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/twbs/bootstrap/issues/5632	|	PR/Issue reviews	|
 14	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/asorici/JaCaMo-R-Landri/issues/41	|	PR/Issue reviews	|
 15	|	Closing issue/PR without explanation/feedback for a decision	|	https://github.com/Theano/Theano/pull/6	|	PR/Issue reviews	|
