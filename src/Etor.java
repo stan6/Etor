@@ -234,6 +234,7 @@ public class Etor {
 	 * */
 	
 	public static void noAttributionCheckInCode(String repo,boolean issueType, int n) throws IOException {
+		//codeSimilarityUsingAC2();
 		boolean found=false;
 		boolean credit=false;
 		String slink="";
