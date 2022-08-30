@@ -16,9 +16,6 @@ Etor is in Java, and Python. You can find the source code under "src" directory 
   For "No-License-Provided-for-Public-Repository",
   >[E.g.,  ./Etor.sh ghp_xxx 2 https://github.com/EtorChecker/Etor null null]
   
-  For "License-Inconsistency",
-  >[E.g.,  ./Etor.sh ghp_xxx 3 https://github.com/EtorChecker/Etor null null]
-  
   For "Uninformed-License-Change",
   >[E.g.,  ./Etor.sh ghp_xxxx 4 https://github.com/EtorChecker/Etor null null]
   
