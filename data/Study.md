@@ -1,4 +1,4 @@
-|S/N|Type|Link|Remarks|Artifact|
+|S/N|Link|Type|Remarks|Artifact|
 |:-----:|:-------:|:-------:|:-------:|:-------:|
 1	|	https://github.com/keredson/peewee/issues/2	|	Closing issue/PR without explanation/feedback for a decision	|		|	PR/Issue comments	|
 2	|	https://github.com/SheetJS/sheetjs/issues/2095	|	Closing issue/PR without explanation/feedback for a decision	|		|	PR/Issue comments	|
