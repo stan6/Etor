@@ -269,79 +269,67 @@
 267	|	https://github.com/eventflit/eventflit-js/issues/1	|	Soft forking	|		|	Project	|
 268	|	https://github.com/ivipsourcecode/dxslam/issues/7	|	Soft forking	|		|	Project	|
 269	|	https://github.com/JGMaker3dofficial/artistd/issues/1	|	Soft forking	|		|	Project	|
-270	|	repo 1: https://github.com/MarlinFirmware/Marlin/, repo 2: https://github.com/TwinkieXLII/ArtistD-Pro	|	Soft forking	|	additional link	|	Project	|
-271	|	https://github.com/biddyweb/yes-cart/issues/33	|	Soft forking	|		|	Project	|
-272	|	https://github.com/dostonhamrakulov/Connect-4-Artificial-Intelligence-In-Java/issues/1	|	Soft forking	|		|	Project	|
-273	|	https://github.com/TutorialsAndroid/crashx/issues/4	|	Soft forking	|		|	Project	|
-274	|	https://github.com/durgagupta/magento1-whatsapp-chat/issues/2	|	Soft forking	|		|	Project	|
-275	|	https://github.com/flyphp/flyframework/pull/1	|	Soft forking	|		|	Project	|
-276	|	https://github.com/atif624/UX-Short-Project/issues/1	|	Soft forking	|		|	Project	|
-277	|	https://github.com/lacymorrow/crossover/issues/105	|	Soft forking	|		|	Project	|
-278	|	https://github.com/Androz2091/discord-giveaways-bot/issues/64	|	Soft forking	|		|	Project	|
-279	|	https://github.com/mitmproxy/pdoc/issues/182	|	Soft forking	|		|	Project	|
-280	|	https://github.com/Rikki407/EthIndiaProject/issues/4	|	Soft forking	|		|	Project	|
-281	|	https://github.com/deep-man-yy/pepenude/issues/9	|	Soft forking	|	additional link	|	Project	|
-282	|	https://github.com/BoldBrowser/bold-browser/issues/2	|	Soft forking	|		|	Project	|
-283	|	https://github.com/Androz2091/giveaways-bot/issues/64	|	Soft forking	|		|	Project	|
-284	|	https://github.com/Xmader/musescore-downloader/issues/5	|	Soft forking	|		|	Project	|
-285	|	https://github.com/TeamNewPipe/NewPipe/issues/539	|	Soft forking	|		|	Project	|
-286	|	https://github.com/babel/babel/pull/13783	|	Soft forking	|		|	Project	|
-287	|	https://github.com/julienrf/play-jsmessages/issues/42	|	Soft forking	|		|	Project	|
-288	|	https://github.com/minio/minio/issues/12143	|	Uninformed License change	|		|	CHANGELOG	|
-289	|	https://github.com/vcr/vcr/issues/804	|	Uninformed License change	|		|	CHANGELOG	|
-290	|	https://github.com/GNU-Pony/spike/issues/4	|	Uninformed License change	|	additional link	|	CHANGELOG	|
-291	|	https://github.com/bitnine-oss/agensgraph/issues/439	|	Uninformed License change	|		|	CHANGELOG	|
-292	|	https://github.com/sibelius/relay-workshop/issues/6	|	Uninformed License change	|		|	CHANGELOG	|
-293	|	https://github.com/Digitaler-Impfnachweis/documentation/issues/30	|	Uninformed License change	|		|	CHANGELOG	|
-294	|	https://github.com/kstenerud/Musashi/issues/24	|	Uninformed License change	|	additional link	|	CHANGELOG	|
-295	|	https://github.com/iopleke/Minechem/issues/806	|	Uninformed License change	|		|	CHANGELOG	|
-296	|	https://github.com/audacity/audacity/issues/1213	|	Uninformed License change	|		|	CHANGELOG	|
-297	|	https://github.com/dorimanx/exfat-nofuse/issues/5	|	Uninformed License change	|		|	CHANGELOG	|
-298	|	https://github.com/hitbtc-com/hitbtc-api/issues/253	|	Unmaintained project with paid service	|		|	Release history	|
-299	|	https://github.com/Foundry376/Mailspring/issues/2200	|	Unmaintained project with paid service	|		|	Release history	|
-300	|	https://github.com/tranleduy2000/javaide/issues/236	|	Unmaintained project with paid service	|		|	Release history	|
-301	|	https://github.com/naman14/Timber	|	Unmaintained project with paid service	|	additional link	|	Release history	|
-302	|	https://github.com/tycrek/degoogle	|	Unmaintained project with paid service	|	additional link	|	Release history	|
-303	|	https://github.com/termux/termux-app	|	Unmaintained project with paid service	|	additional link	|	Release history	|
-304	|	https://github.com/wp-sync-db/wp-sync-db/issues/76	|	Unmaintained project with paid service	|		|	Release history	|
-305	|	https://github.com/rconfig/rConfig-templates/issues/4	|	Unmaintained project with paid service	|		|	Release history	|
-306	|	https://github.com/noinnion/greader/issues/440	|	Unmaintained project with paid service	|		|	Release history	|
-307	|	https://github.com/termux/termux-packages/pull/7479	|	Unmaintained project with paid service	|	additional link	|	Release history	|
-308	|	https://github.com/devnied/EMV-NFC-Paycard-Enrollment	|	Unmaintained project with paid service	|	additional link	|	Release history	|
-309	|	https://github.com/liz740839/WeChatRedPacketHelper	|	Unmaintained project with paid service	|	additional link	|	Release history	|
-310	|	https://github.com/wernerb/docker-bubbleupnpserver	|	Unmaintained project with paid service	|	additional link	|	Release history	|
-311	|	https://github.com/shadowsocks/shadowsocks-android/	|	Unmaintained project with paid service	|	additional link	|	Release history	|
-312	|	https://github.com/MaxSmile/EasyVPN-Free/	|	Unmaintained project with paid service	|	additional link	|	Release history	|
-313	|	https://github.com/hyperion-project/hyperion.ng	|	Unmaintained project with paid service	|	additional link	|	Release history	|
-314	|	https://github.com/solyarisoftware/posprinterdriver	|	Unmaintained project with paid service	|	additional link	|	Release history	|
-315	|	https://github.com/jmollan/support-tools/issues/58	|	Unmaintained project with paid service	|		|	Release history	|
-316	|	https://github.com/gantoreno/bango/issues/1	|	Unmaintained project with paid service	|		|	Release history	|
-317	|	https://github.com/Krizzel87/Oledterm_SH1106/issues/1	|	Unmaintained project with paid service	|		|	Release history	|
-318	|	https://github.com/Mach5/supersonic/issues/88	|	Unmaintained project with paid service	|		|	Release history	|
-319	|	https://github.com/jspenguin2017/Snippets/issues/3	|	Vulnerable API	|		|	API/Library/Add-on	|
-320	|	https://github.com/flyingsaucerproject/flyingsaucer/pull/123	|	Vulnerable API	|		|	API/Library/Add-on	|
-321	|	https://github.com/cheat-engine/cheat-engine/issues/816	|	Vulnerable API	|		|	API/Library/Add-on	|
-322	|	https://github.com/openSUSE/openSUSE-docs-revamped-temp/issues/17	|	Vulnerable API	|		|	API/Library/Add-on	|
-323	|	https://github.com/wifiphisher/wifiphisher/issues/519	|	Vulnerable/Malicious code	|		|	Source code	|
-324	|	https://github.com/cpriest/SnapLinksPlus/issues/281	|	Vulnerable/Malicious code	|		|	Source code	|
-325	|	https://github.com/qbittorrent/qBittorrent/issues/3453	|	Vulnerable/Malicious code	|		|	Source code	|
-326	|	https://github.com/brave/brave-core/pull/5759	|	Vulnerable/Malicious code	|		|	Source code	|
-327	|	https://github.com/x64dbg/x64dbg/issues/391	|	Vulnerable/Malicious code	|		|	Source code	|
-328	|	https://github.com/Crypto-Loot/cryptoloot/issues/6	|	Vulnerable/Malicious code	|		|	Source code	|
-329	|	https://github.com/sahilchaddha/rudyjs/issues/1	|	Vulnerable/Malicious code	|		|	Source code	|
-330	|	https://github.com/NullVoxPopuli/aeonvera/issues/1212	|	Vulnerable/Malicious code	|		|	Source code	|
-331	|	https://github.com/ITEA3-Measure/MeasurePlatform/issues/6	|	Vulnerable/Malicious code	|		|	Source code	|
-332	|	https://github.com/illacceptanything/illacceptanything/pull/330	|	Vulnerable/Malicious code	|		|	Source code	|
-333	|	https://github.com/tinymce/tinymce/issues/3177	|	Vulnerable/Malicious code	|		|	Source code	|
-334	|	https://github.com/trustwallet/assets/pull/4531	|	Vulnerable/Malicious code	|		|	Source code	|
-335	|	https://github.com/ColorlibHQ/AdminLTE/issues/598	|	Vulnerable/Malicious code	|		|	Source code	|
-336	|	https://github.com/mitre/multiscanner/issues/159	|	Vulnerable/Malicious code	|		|	Source code	|
-337	|	https://github.com/joomla/joomla-cms/issues/1658	|	Vulnerable/Malicious code	|		|	Source code	|
-338	|	https://github.com/TeamWin/Team-Win-Recovery-Project/issues/276	|	Vulnerable/Malicious code	|		|	Source code	|
-339	|	https://github.com/mattermost/mattermost-server/issues/5935	|	Vulnerable/Malicious code	|		|	Source code	|
-340	|	https://github.com/gilbertchen/duplicacy/issues/137	|	Vulnerable/Malicious code	|		|	Source code	|
-341	|	https://github.com/mikeshx/tgScraper/issues/2	|	Vulnerable/Malicious code	|		|	Source code	|
-342	|	https://github.com/soham96/AlpacaBot/pull/3	|	Vulnerable/Malicious code	|		|	Source code	|
-343	|	https://github.com/Hylozoic/hylo-evo/issues/940	|	Vulnerable/Malicious code	|		|	Source code	|
-344	|	https://github.com/tenderlove/rubycommitters.org	|	Vulnerable/Malicious code	|	additional link	|	Source code	|
-345	|	https://github.com/vsjha18/nsetools/issues/23	|	Vulnerable/Malicious code	|		|	Source code	|
+270	|	https://github.com/biddyweb/yes-cart/issues/33	|	Soft forking	|		|	Project	|
+271	|	https://github.com/dostonhamrakulov/Connect-4-Artificial-Intelligence-In-Java/issues/1	|	Soft forking	|		|	Project	|
+272	|	https://github.com/TutorialsAndroid/crashx/issues/4	|	Soft forking	|		|	Project	|
+273	|	https://github.com/durgagupta/magento1-whatsapp-chat/issues/2	|	Soft forking	|		|	Project	|
+274	|	https://github.com/flyphp/flyframework/pull/1	|	Soft forking	|		|	Project	|
+275	|	https://github.com/atif624/UX-Short-Project/issues/1	|	Soft forking	|		|	Project	|
+276	|	https://github.com/lacymorrow/crossover/issues/105	|	Soft forking	|		|	Project	|
+277	|	https://github.com/Androz2091/discord-giveaways-bot/issues/64	|	Soft forking	|		|	Project	|
+278	|	https://github.com/mitmproxy/pdoc/issues/182	|	Soft forking	|		|	Project	|
+279	|	https://github.com/Rikki407/EthIndiaProject/issues/4	|	Soft forking	|		|	Project	|
+280	|	https://github.com/deep-man-yy/pepenude/issues/9	|	Soft forking	|	additional link	|	Project	|
+281	|	https://github.com/BoldBrowser/bold-browser/issues/2	|	Soft forking	|		|	Project	|
+282	|	https://github.com/Androz2091/giveaways-bot/issues/64	|	Soft forking	|		|	Project	|
+283	|	https://github.com/Xmader/musescore-downloader/issues/5	|	Soft forking	|		|	Project	|
+284	|	https://github.com/TeamNewPipe/NewPipe/issues/539	|	Soft forking	|		|	Project	|
+285	|	https://github.com/babel/babel/pull/13783	|	Soft forking	|		|	Project	|
+286	|	https://github.com/julienrf/play-jsmessages/issues/42	|	Soft forking	|		|	Project	|
+287	|	https://github.com/minio/minio/issues/12143	|	Uninformed License change	|		|	CHANGELOG	|
+288	|	https://github.com/vcr/vcr/issues/804	|	Uninformed License change	|		|	CHANGELOG	|
+289	|	https://github.com/GNU-Pony/spike/issues/4	|	Uninformed License change	|	additional link	|	CHANGELOG	|
+290	|	https://github.com/bitnine-oss/agensgraph/issues/439	|	Uninformed License change	|		|	CHANGELOG	|
+291	|	https://github.com/sibelius/relay-workshop/issues/6	|	Uninformed License change	|		|	CHANGELOG	|
+292	|	https://github.com/Digitaler-Impfnachweis/documentation/issues/30	|	Uninformed License change	|		|	CHANGELOG	|
+293	|	https://github.com/kstenerud/Musashi/issues/24	|	Uninformed License change	|	additional link	|	CHANGELOG	|
+294	|	https://github.com/iopleke/Minechem/issues/806	|	Uninformed License change	|		|	CHANGELOG	|
+295	|	https://github.com/audacity/audacity/issues/1213	|	Uninformed License change	|		|	CHANGELOG	|
+296	|	https://github.com/dorimanx/exfat-nofuse/issues/5	|	Uninformed License change	|		|	CHANGELOG	|
+297	|	https://github.com/hitbtc-com/hitbtc-api/issues/253	|	Unmaintained project with paid service	|		|	Release history	|
+298	|	https://github.com/Foundry376/Mailspring/issues/2200	|	Unmaintained project with paid service	|		|	Release history	|
+299	|	https://github.com/tranleduy2000/javaide/issues/236	|	Unmaintained project with paid service	|		|	Release history	|
+300	|	https://github.com/wp-sync-db/wp-sync-db/issues/76	|	Unmaintained project with paid service	|		|	Release history	|
+301	|	https://github.com/rconfig/rConfig-templates/issues/4	|	Unmaintained project with paid service	|		|	Release history	|
+302	|	https://github.com/noinnion/greader/issues/440	|	Unmaintained project with paid service	|		|	Release history	|
+303	|	https://github.com/termux/termux-packages/pull/7479	|	Unmaintained project with paid service	|	additional link	|	Release history	|
+304	|	https://github.com/jmollan/support-tools/issues/58	|	Unmaintained project with paid service	|		|	Release history	|
+305	|	https://github.com/gantoreno/bango/issues/1	|	Unmaintained project with paid service	|		|	Release history	|
+306	|	https://github.com/Krizzel87/Oledterm_SH1106/issues/1	|	Unmaintained project with paid service	|		|	Release history	|
+307	|	https://github.com/Mach5/supersonic/issues/88	|	Unmaintained project with paid service	|		|	Release history	|
+308	|	https://github.com/jspenguin2017/Snippets/issues/3	|	Vulnerable API	|		|	API/Library/Add-on	|
+309	|	https://github.com/flyingsaucerproject/flyingsaucer/pull/123	|	Vulnerable API	|		|	API/Library/Add-on	|
+310	|	https://github.com/cheat-engine/cheat-engine/issues/816	|	Vulnerable API	|		|	API/Library/Add-on	|
+311	|	https://github.com/openSUSE/openSUSE-docs-revamped-temp/issues/17	|	Vulnerable API	|		|	API/Library/Add-on	|
+312	|	https://github.com/wifiphisher/wifiphisher/issues/519	|	Vulnerable/Malicious code	|		|	Source code	|
+313	|	https://github.com/cpriest/SnapLinksPlus/issues/281	|	Vulnerable/Malicious code	|		|	Source code	|
+314	|	https://github.com/qbittorrent/qBittorrent/issues/3453	|	Vulnerable/Malicious code	|		|	Source code	|
+315	|	https://github.com/brave/brave-core/pull/5759	|	Vulnerable/Malicious code	|		|	Source code	|
+316	|	https://github.com/x64dbg/x64dbg/issues/391	|	Vulnerable/Malicious code	|		|	Source code	|
+317	|	https://github.com/Crypto-Loot/cryptoloot/issues/6	|	Vulnerable/Malicious code	|		|	Source code	|
+318	|	https://github.com/sahilchaddha/rudyjs/issues/1	|	Vulnerable/Malicious code	|		|	Source code	|
+319	|	https://github.com/NullVoxPopuli/aeonvera/issues/1212	|	Vulnerable/Malicious code	|		|	Source code	|
+320	|	https://github.com/ITEA3-Measure/MeasurePlatform/issues/6	|	Vulnerable/Malicious code	|		|	Source code	|
+321	|	https://github.com/illacceptanything/illacceptanything/pull/330	|	Vulnerable/Malicious code	|		|	Source code	|
+322	|	https://github.com/tinymce/tinymce/issues/3177	|	Vulnerable/Malicious code	|		|	Source code	|
+323	|	https://github.com/trustwallet/assets/pull/4531	|	Vulnerable/Malicious code	|		|	Source code	|
+324	|	https://github.com/ColorlibHQ/AdminLTE/issues/598	|	Vulnerable/Malicious code	|		|	Source code	|
+325	|	https://github.com/mitre/multiscanner/issues/159	|	Vulnerable/Malicious code	|		|	Source code	|
+326	|	https://github.com/joomla/joomla-cms/issues/1658	|	Vulnerable/Malicious code	|		|	Source code	|
+327	|	https://github.com/TeamWin/Team-Win-Recovery-Project/issues/276	|	Vulnerable/Malicious code	|		|	Source code	|
+328	|	https://github.com/mattermost/mattermost-server/issues/5935	|	Vulnerable/Malicious code	|		|	Source code	|
+329	|	https://github.com/gilbertchen/duplicacy/issues/137	|	Vulnerable/Malicious code	|		|	Source code	|
+330	|	https://github.com/mikeshx/tgScraper/issues/2	|	Vulnerable/Malicious code	|		|	Source code	|
+331	|	https://github.com/soham96/AlpacaBot/pull/3	|	Vulnerable/Malicious code	|		|	Source code	|
+332	|	https://github.com/Hylozoic/hylo-evo/issues/940	|	Vulnerable/Malicious code	|		|	Source code	|
+333	|	https://github.com/vsjha18/nsetools/issues/23	|	Vulnerable/Malicious code	|		|	Source code	|
